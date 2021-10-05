@@ -3,16 +3,19 @@
     <div class="app">
       <Navigation/>
       <router-view />
+      <Footer/>
     </div>
   </div>
 </template>
 
 <script>
 import Navigation from '@/components/Navigation.vue'
+import Footer from '@/components/Footer.vue'
 export default {
   name: "app",
   components: {
-    Navigation
+    Navigation,
+    Footer
   },
   data() {
     return {};
@@ -54,5 +57,17 @@ export default {
 
 .link-light {
   color: #fff;
+}
+.arrow {
+  margin-left: 8px;
+  widows: 12px;
+  path {
+    fill: #000;
+  }
+}
+.arrow-light {
+  path {
+    fill: #fff;
+  }
 }
 </style>
